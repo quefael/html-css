@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Hover</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            color: rgb(0, 0, 0);
+            background-color: azure;
+        }
+
+        div:hover {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Testando o Hover</h1>
+    <p>Passe o mouse sobre o texto abaixo?</p>
+    <div>
+        Passe o mouse aqui.
+        <p><a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank" rel="external">Texto escondido...</a></p>
+    </div>
+</body>
+</html>
