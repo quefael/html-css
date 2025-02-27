@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/icone-html.ico" type="image/x-icon">
+    <title>Exercício 09</title>
+</head>
+
+<body>
+    <h1>Imagens dinâmicas, áudios e vídeos</h1>
+        <h2>Imagens flexíveis</h2>
+            <picture>
+                <source media="(max-width: 750px)" srcset="../imagens/pequeno.png" type="image/png">
+                <source media="(max-width: 1050px)" srcset="../imagens/medio.png" type="image/png">
+                <img src="../imagens/grande.png" alt="Imagem Grande">
+            </picture>
+        
+        <h2>Áudios</h2>
+            <audio preload="metadata" controls>
+                <source src="../imagens/guanacast-33.mp3" type="audio/mpeg">
+                <source src="../imagens/guanacast-33.ogg" type="audio/ogg">
+                <source src="../imagens/guanacast-33.wav" type="audio/wav">
+                <p>Infelizmente seu navegador não é capaz de reproduzir áudio. <a href="../imagens/guanacast-33.mp3" download="guanacast-33" type="audio/mpeg">Clique aqui para baixar o arquivo MP3.</a></p>
+            </audio>
+
+        <h2>Vídeos</h2>
+            <h3>Hospedagem interna</h3>
+            <video width="300" controls>
+                <source src="../imagens/Video2_mp4.mp4" type="video/mp4">
+                <source src="../imagens/Video2_webm.webm" type="video/webm">
+                <source src="../imagens/Video2_mkv.mkv" type="video/m4v">
+                <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+            </video>
+
+            <h3>Hospedagem externa</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/TCeyIwFGkYo?si=EDuCHy8pfHqmbPYO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
