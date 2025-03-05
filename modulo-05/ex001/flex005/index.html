@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        div.conteiner {
+            background-color: rgb(212, 252, 255);
+            height: 50vw;
+            width: 50vw;
+            margin: auto;
+            border-radius: 10px;
+
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div.item {
+            background-color: aquamarine;
+            height: 25%;
+            margin: auto;
+            padding: 5px;
+            border-radius: 10px;
+
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conteiner">
+        <div class="item">Exemplo de bloco: A</div>
+    </div>
+</body>
+</html>
